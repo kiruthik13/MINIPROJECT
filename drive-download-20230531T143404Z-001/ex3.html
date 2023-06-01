@@ -1,0 +1,317 @@
+<html>
+    <head>
+        <style>
+                body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-group select option:first-child {
+      color: #888;
+    }
+
+    .form-group textarea {
+      height: 100px;
+      resize: vertical;
+    }
+
+    .form-group button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #45a049;
+    }
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .company-list {
+      margin-top: 20px;
+    }
+
+    .company-item {
+      margin-bottom: 10px;
+    }
+
+    #working-days-form {
+      display: none;
+    }
+
+    #working-days-form label {
+      margin-right: 10px;
+    }
+
+    #working-days-form input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    #working-time-form {
+      display: none;
+    }
+    body{
+    background-image:url('image01.webp');
+    background-size: cover;
+ }
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active{
+  background-color: #04AA6D;
+  color: white;
+}
+.topnav a.button1{
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.button1:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.button1.active{
+  background-color: #04AA6D;
+  color: white;
+}
+.topnav img{
+  position:absolute;
+  float: right;
+  right: 5px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav img.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</head>
+<body> 
+  <div class="topnav">
+    <a class="active" href="first page.html">Home</a>
+    <a href="service.html">service</a>
+    <a href="insurance.html">insurance</a>
+    <a href="aboutus.html">About us</a>
+    <a class="button1" href="profile.html">login</a>
+    <form1 action="savedprofile.html">
+     <input type="image" src="image8.svg" alt="Submit" style="float:right" width="48" height="48"></br>
+  </form1> 
+  </div>
+
+  <main>
+        <div class="container">
+        <form id="location-form">
+           Enter the name :<input type="text" name="name" required><br><br>
+           Enter the mobile number :<input type="text" name="phone" required><br><br>
+           Enter the address:</br><textarea name="address"></textarea><br><br>
+           <label><input type="radio" name="service-option" value="pickup service">pickup service</label>
+           <label><input type="radio" name="service-option" value="service">service</label><br>
+          <label for="location">Enter your location:</label>
+          <input type="text" id="location" name="location"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+
+        <form id="working-days-form">
+          <div id="company-list" class="company-list"></div><br><br>
+          <label>Select working day:</label>
+          <label><input type="checkbox" name="working-day" value="Monday">Monday</label>
+          <label><input type="checkbox" name="working-day" value="Tuesday">Tuesday</label>
+          <label><input type="checkbox" name="working-day" value="Wednesday">Wednesday</label>
+          <label><input type="checkbox" name="working-day" value="Thursday">Thursday</label>
+          <label><input type="checkbox" name="working-day" value="Friday">Friday</label>
+          <label><input type="checkbox" name="working-day" value="Saturday">Saturday</label>
+          <label><input type="checkbox" name="working-day" value="Sunday">Sunday</label>
+          <input type="submit" value="Next">
+        </form>
+    
+        <form id="working-time-form" action="submition.html" method="GET">
+          <label>Select working time:</label>
+          <label><input type="checkbox" name="working-time" value="Morning">Morning</label>
+          <label><input type="checkbox" name="working-time" value="Afternoon">Afternoon</label>
+          <label><input type="checkbox" name="working-time" value="Evening">Evening</label>
+          <input type="submit" action="submission.html" value="submit">
+        </form>
+        <form id="working-time-form" action="submission.html" >
+        <input type="submit" value="pickup service">
+        <input type="submit" nvalue="service">
+        </form>
+        </div>
+      </main>
+      <script>
+        var companyList = document.getElementById('company-list');
+        var workingDaysForm = document.getElementById('working-days-form');
+        var workingTimeForm = document.getElementById('working-time-form');
+    
+        document.getElementById('location-form').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent form submission
+    
+          var location = document.getElementById('location').value;
+    
+          // Clear previous results
+          companyList.innerHTML = '';
+    
+          // Check the location using a switch statement
+          switch (location.toLowerCase()) {
+            case 'erode':
+              displayCompanies(['bajaj service ', 'hero honda service', 'tvs service']);
+              break;
+            case 'coimbatore':
+              displayCompanies(['tvs service', 'hero honda service', 'bajaj service ']);
+              break;
+            // Add more cases for different locations
+            default:
+              displayErrorMessage('No companies found for the entered location.');
+              break;
+          }
+        });
+    
+        document.getElementById('working-days-form').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent form submission
+          workingDaysForm.style.display = 'none';
+          workingTimeForm.style.display = 'block';
+        });
+    
+        function displayCompanies(companies) {
+          companies.forEach(function(company) {
+            var companyItem = document.createElement('div');
+            companyItem.classList.add('company-item');
+    
+            var radio = document.createElement('input');
+            radio.type = 'radio';
+            radio.name = 'company';
+            radio.value = company;
+    
+            var label = document.createElement('label');
+            label.textContent = company;
+    
+            companyItem.appendChild(radio);
+            companyItem.appendChild(label);
+            companyList.appendChild(companyItem);
+          });
+    
+          workingDaysForm.style.display = 'block';
+        }
+    
+        function displayErrorMessage(message) {
+          var errorMessage = document.createElement('p');
+          errorMessage.textContent = message;
+          companyList.appendChild(errorMessage);
+        }
+      </script>
+</body>
+</html>

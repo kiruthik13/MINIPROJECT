@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+
+    #container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+    .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active{
+  background-color: #04AA6D;
+  color: white;
+}
+.topnav button1{
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav button1:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav button1.active{
+  background-color: #04AA6D;
+  color: white;
+}
+.topnav img{
+  position:absolute;
+  float: right;
+  right: 5px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav img.active {
+  background-color: #04AA6D;
+  color: white;
+}
+  </style>
+</head>
+<body>
+  <style type="text/css">
+    body{
+     background-image:url('image001.jpg');
+     background-size: cover;
+  }
+ </style>
+    <div class="topnav">
+        <a class="active" href="first page.html">Home</a>
+        <a href="service.html">service</a>
+        <a href="insurance.html">insurance</a>
+        <a href="aboutus.html">About us</a>
+        <form action="profile.html">
+          <input type="image" src="image8.svg" alt="Submit" style="float:right" width="48" height="48"></br>
+        </form>
+      </div>
+  <div id="container">
+    <h1>Profile</h1>
+    <p><strong>Name:</strong> <span id="name"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Phone:</strong> <span id="phone"></span></p>
+    <p><strong>Address:</strong> <span id="address"></span></p>
+    <p><strong>Username:</strong> <span id="username"></span></p>
+  </div>
+
+  <script>
+    // Retrieve profile data from localStorage
+    var profile = JSON.parse(localStorage.getItem("profile"));
+
+    // Display profile information on the page
+    document.getElementById("name").textContent = profile.name;
+    document.getElementById("email").textContent = profile.email;
+    document.getElementById("phone").textContent = profile.phone;
+    document.getElementById("address").textContent = profile.address;
+    document.getElementById("username").textContent = profile.username;
+  </script>
+</body>
+</html>
